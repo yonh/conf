@@ -13,9 +13,9 @@ function fish_prompt -d "Write out the prompt"
 	# show git branch
 	set -l git_branch (git branch ^/dev/null | sed -n '/\* /s///p')
 	if [ $git_branch ]
-		printf 'git:(%s%s%s)' (set_color red) $git_branch (set_color normal)  
+		printf 'git:(%s%s%s)' (set_color green) $git_branch (set_color normal)  
 	end
-	echo -e '> '
+	echo -e '\n> '
 end
 
 # alias
