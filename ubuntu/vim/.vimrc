@@ -59,8 +59,8 @@ set langmenu=zn_CN.UTF-8
 set helplang=cn
 " 语言设置
 
-set cmdheight=1
-" 命令行（在状态行）的高度
+set cmdheight=2
+" 命令行（在状态行）的高度，默认为1,这里是2
 
 set ruler
 " 在编辑过程中，在右下角显示光标位置的状态行
