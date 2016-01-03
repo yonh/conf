@@ -31,3 +31,12 @@ end
 function gbr
 	git branch $argv
 end
+function ga
+	git add $argv
+end
+function clone
+	git clone $argv
+end
+function branchnew 
+	git checkout -b $argv 
+end
