@@ -1,6 +1,4 @@
-function j
-	cd (autojump $argv)
-end
+if test -f /Users/yonh/.autojump/share/autojump/autojump.fish; . /Users/yonh/.autojump/share/autojump/autojump.fish; end
 
 function fish_right_prompt
 	printf "%s" (date)
@@ -19,6 +17,11 @@ function fish_prompt -d "Write out the prompt"
 end
 
 # alias
+function 2.; cd ../../; end
+function 3.; cd ../../../; end
+function .....; cd ../../../; end
+function ......; cd ../../../; end
+
 function gst 
 	git status $argv
 end
@@ -40,3 +43,15 @@ end
 function branchnew 
 	git checkout -b $argv 
 end
+
+
+# set docker config
+if test ! -e /tmp/docker_run
+	docker-machine start default
+	touch /tmp/docker_run
+end
+set -gx DOCKER_TLS_VERIFY "1";
+set -gx DOCKER_HOST "tcp://192.168.99.100:2376";
+set -gx DOCKER_CERT_PATH "/Users/yonh/.docker/machine/machines/default";
+set -gx DOCKER_MACHINE_NAME "default";
+
