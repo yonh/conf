@@ -1,9 +1,17 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by file type specific settings.
 {
 	"color_scheme": "Packages/Color Scheme - Sleeplessmind/Sleeplessmind.tmTheme",
 	"ignored_packages":
 	[
-	]
+	],
+	"show_line_endings": true,
+	"open_files_in_new_window": false, // 在 Finder 里打开文件时, 不会新开窗口了.
+	"vintageous_use_ctrl_keys": true, //这样 ST 里的 Vim 就支持 Ctrl + v 列选了.
+	"vintageous_use_sys_clipboard": true, //让 Vim 与系统公用剪切板
+	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",// # 去掉了 "-"
+
+	"show_encoding": true, // 显示文件编码
+	"show_full_path": true,// # 标题栏上显示完整路径, 有时候不小心开错了文件, 这样能帮你早点发现.
+	"highlight_modified_tabs": true, // 修改了而尚未保存的 tab, 会用橘黄色显示
+	"highlight_line":true // 高亮当前行
 }
 

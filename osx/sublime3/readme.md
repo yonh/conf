@@ -19,5 +19,6 @@ cp Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/
 cp Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ```
 # common package
-## Color Scheme - Sleeplessmind
-主题
+* Vintageous vim替代插件
+* Color Scheme - Sleeplessmind 主题
+
