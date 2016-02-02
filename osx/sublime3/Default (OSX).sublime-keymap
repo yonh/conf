@@ -1,0 +1,80 @@
+[
+
+{ "keys": ["ctrl+shift+s"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+{ "keys": ["ctrl+shift+n"], "command": "new_file" },
+{ "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    // { "keys": ["ctrl+y"], "command": "redo_or_repeat" },
+//ctrl + k u           转换大写
+//ctrl + k l           转换小写
+//shift + ctrl + {或}  折叠/展开代码
+{ "keys": ["alt+/"], "command": "auto_complete" },
+//{ "keys": ["ctrl+w","ctrl+w"], "command": "close" },
+{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false } },
+
+//search file or function
+{ "keys": ["alt+,"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+{ "keys": ["alt+."], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
+//home/end
+{ "keys": ["alt+pageup"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+{ "keys": ["alt+pagedown"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+// move code up/down
+
+{ "keys": ["alt+up"], "command": "swap_line_up" },
+{ "keys": ["alt+down"], "command": "swap_line_down" },
+    //注释和复制行
+    { "keys": ["alt+x"], "command": "duplicate_line" },
+    { "keys": ["alt+z"], "command": "toggle_comment", "args": { "block": false } },
+
+{ "keys": ["ctrl+x", "ctrl+x"], "command": "cut" },
+
+//替换ctrl+a
+{ "keys": ["ctrl+shift+a"], "command": "select_all" },
+{ "keys": ["ctrl+x","h"], "command": "select_all" },
+//搜索内容
+{ "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "find"} },
+
+//多行光标
+{ "keys": ["command+up"], "command": "select_lines", "args": {"forward": false} },
+{ "keys": ["command+down"], "command": "select_lines", "args": {"forward": true} },
+
+//光标不动屏幕上下移动
+{ "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 15.0 } },
+{ "keys": ["ctrl+j"], "command": "scroll_lines", "args": {"amount": -15.0 } },
+
+{ "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+//save
+// { "keys": ["alt+s"], "command": "save" },
+{ "keys": ["ctrl+x","ctrl+s"], "command": "save" },
+
+
+//快速切换项目
+// { "keys": ["alt+m"], "command": "prompt_select_project" }, // st2
+{ "keys": ["alt+m"], "command": "prompt_select_workspace" }, // st3
+
+
+//switch project
+// { "keys": ["alt+f"], "command": "show_overlay", "args": {"overlay": "command_palette"} },<
+
+ { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },//右
+{ "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },//左
+
+  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false} }, //上
+ { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true} }, //下
+
+ //跨单词行走
+ { "keys": ["alt+u"], "command": "move", "args": {"by": "word_ends", "forward": false} },// 跨单词左走
+ { "keys": ["alt+i"], "command": "move", "args": {"by": "word_ends", "forward": true} },// 跨单词右走
+
+ //闭合标签
+ { "keys": ["alt+c"], "command": "close_tag" },
+
+ //选中匹配单词
+ { "keys": ["alt+s"], "command": "find_under_expand" },
+
+
+ { "keys": ["ctrl+shift+f"], "command": "reindent" }
+ ]

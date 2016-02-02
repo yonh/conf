@@ -19,8 +19,10 @@ end
 # alias
 function 2.; cd ../../; end
 function 3.; cd ../../../; end
-function .....; cd ../../../; end
+function 4.; cd ../../../../; end
+function ....; cd ../../../; end
 function ......; cd ../../../; end
+function ........; cd ../../../../; end
 
 function gst 
 	git status $argv
