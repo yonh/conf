@@ -20,9 +20,9 @@ end
 function 2.; cd ../../; end
 function 3.; cd ../../../; end
 function 4.; cd ../../../../; end
-function ....; cd ../../../; end
-function ......; cd ../../../; end
-function ........; cd ../../../../; end
+function ....; cd 2.; end
+function ......; cd 3.; end
+function ........; cd 4.; end
 
 function gst 
 	git status $argv
