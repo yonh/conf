@@ -3,8 +3,9 @@ syntax on	" 语法高亮
 
 set autoindent 	" 自动对齐
 set smartindent " 开启新行时使用智能自动缩进
-
 set cursorline	" 横线指示当前行
+set tabstop=4
+set shiftwidth=4
 
 set ruler 	" 打开状态栏标尺
 
@@ -31,7 +32,5 @@ inoremap { {<ESC>o}<ESC>ko
 "输入("时补全");
 inoremap (" ("");<ESC>hhi
 inoremap then thenend<ESC>hhi<ENTER><BACKSPACE><ESC>ko
-
-
 
 
