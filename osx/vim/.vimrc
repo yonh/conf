@@ -1,6 +1,6 @@
 
 syntax on	" 语法高亮
-colorscheme darkblue " 颜色主题
+colorscheme wombat256
 
 set autoindent 	" 自动对齐
 set smartindent " 开启新行时使用智能自动缩进
@@ -34,5 +34,3 @@ inoremap { {<ESC>o}<ESC>ko
 inoremap (" ("");<ESC>hhi
 inoremap then thenend<ESC>hhi<ENTER><BACKSPACE><ESC>ko
 
-" 默认的蓝色台难看清了
-""hi Comment ctermfg =blue
