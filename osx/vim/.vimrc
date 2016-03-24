@@ -29,7 +29,8 @@ nnoremap ; :
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap " ""<ESC>i
-inoremap { {<ESC>o}<ESC>ko
+inoremap { {}<ESC>i
+"inoremap { {<ESC>o}<ESC>ko
 "输入("时补全");
 inoremap (" ("");<ESC>hhi
 inoremap then thenend<ESC>hhi<ENTER><BACKSPACE><ESC>ko
