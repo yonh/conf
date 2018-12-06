@@ -1,0 +1,84 @@
+# default.custom.yaml  
+# save it to:   
+#   ~/.config/fcitx/rime  (linux - fcitx)
+#   ~/.config/ibus/rime   (linux - ibus)
+#   ~/Library/Rime        (macos)
+#   %APPDATA%\Rime        (windows)
+
+
+patch:
+  switcher:
+    abbreviate_options: true
+    caption: 〔 切换输入法 〕          # 切换输入法提示文字
+    fold_options: true
+    hotkeys:
+      - "Control+grave"              # control + `
+    #      - "Control+s"                 # 添加 Ctrl+s
+    save_options:
+      - full_shape
+      - ascii_punct
+      - simplification
+      - extended_charset
+  menu:
+    page_size: 9                                  # 候选词数量
+
+  schema_list:                                    # 激活的输入方案选单
+    #    - schema: luna_pinyin                    # 朙月拼音
+    - schema: luna_pinyin_simp                    # 朙月拼音 简化字模式
+    - schema: jap_poly                            # poly日文
+    - schema: double_pinyin_flypy                 # 小鶴雙拼
+  #    - schema: luna_pinyin_tw                   # 朙月拼音 臺灣正體模式
+  #    - schema: terra_pinyin                     # 地球拼音 dì qiú pīn yīn
+  #    - schema: bopomofo                         # 注音
+  #    - schema: jyutping                         # 粵拼
+  #    - schema: cangjie5                         # 倉頡五代
+  #    - schema: cangjie5_express                 # 倉頡 快打模式
+  #    - schema: quick5                           # 速成
+  #    - schema: wubi86                           # 五笔 86
+  #    - schema: wubi_pinyin                      # 五笔拼音混合輸入
+  #    - schema: double_pinyin                    # 自然碼雙拼
+  #    - schema: double_pinyin_mspy               # 微軟雙拼
+  #    - schema: double_pinyin_abc                # 智能 ABC 雙拼
+  #    - schema: wugniu                           # 吳語上海話（新派）
+  #    - schema: wugniu_lopha                     # 吳語上海話（老派）
+  #    - schema: sampheng                         # 中古漢語三拼
+  #    - schema: zyenpheng                        # 中古漢語全拼
+  #    - schema: ipa_xsampa                       # X-SAMPA 國際音標
+  #    - schema: emoji                            # emoji 表情
+
+  style:
+    color_scheme: light
+
+  preset_color_schemes:
+    light:
+      name: Yonh Lai                              # 作者名
+      author: "Yonh Lai <azssjli@163.com>"        # 作者
+      horizontal: true                            # 候选条横向显示
+      inline_preedit: true                        # 启用内嵌编码模式，候选条首行不显示拼音
+      candidate_format: "%c\u2005%@\u2005"        # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+      corner_radius: 5                            # 候选条圆角半径
+      border_height: 7                            # 窗口边界高度，大于圆角半径才生效
+      border_width: 7                             # 窗口边界宽度，大于圆角半径才生效
+      back_color: 0xFFFFFF                        # 候选条背景色
+      border_color: 0xE0B693                      # 边框色
+      font_face: "PingFangSC-Regular"             # 候选词字体
+      font_point: 18                              # 预选栏文字字号
+      label_font_face: "PingFangSC-Light"         # 候选词编号字体
+      label_font_point: 14                        # 预选栏编号字号
+      candidate_text_color: 0x000000              # 预选项文字颜色
+      text_color: 0x000000                        # 拼音行文字颜色，24位色值，16进制，BGR顺序
+      comment_text_color: 0x999999                # 拼音等提示文字颜色
+      hilited_text_color: 0xFF6941                # 高亮拼音 (需要开启内嵌编码)
+      hilited_candidate_text_color: 0xFF6941      # 第一候选项文字颜色
+      hilited_candidate_back_color: 0xFFFFFF      # 第一候选项背景背景色
+      hilited_comment_text_color: 0xFF6941        # 注解文字高亮
+
+  ascii_composer:
+    switch_key:
+      Caps_Lock: noop
+      Control_L: noop
+      Control_R: noop
+      Eisu_toggle: clear
+      Shift_L: commit_code
+      Shift_R: commit_code
+
